@@ -9,6 +9,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     public static Timer GameTimer { get; private set; }
 
+    public static Timer TimerStart { get; private set; }
+    public static Timer TimerEnd { get; private set; }
+
     void Awake()
     {
         if (Instance != null && Instance != this)
