@@ -6,7 +6,7 @@ public class StartScript : MonoBehaviour
 {
     [SerializeField] GameObject colider;
 
-    private void OnTriggerEnter2D(Collider2D colider)
+    private void OnTriggerEnter(Collider colider)
     {
         GameManager.GameTimer.timerIsRunning = true;
     }

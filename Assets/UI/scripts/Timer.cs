@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     public float totalTime = 0;
     private float timeFactor = 0;
     public GameObject EndPage;
+    public GameObject PlayPage;
     private void Start()
     {
         // Starts the timer automatically
@@ -30,6 +31,7 @@ public class Timer : MonoBehaviour
     {
         TimerEnd();
         EndPage.SetActive(true);
+        PlayPage.SetActive(true);
     }
     void TimerStart()
     {
